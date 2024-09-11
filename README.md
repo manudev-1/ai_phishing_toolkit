@@ -65,12 +65,15 @@ Available flags:
 ```
 options:
   -h, --help            show this help message and exit
-  -ai {OpenAI GPT-3.5,OpenAI GPT-4,Mistral (local),Llama3 (local)}
+  -ai {OpenAI GPT-3.5,OpenAI GPT-4o,Mistral (local),Llama3 (local)}
                         Select AI to use
   -platform {Twitter,LinkedIn}
                         Select platform to scrape user data from
   -list LIST            Target multiple users (provide file path with username list)
+  -list-company LIST_COMPANY
+                        Target multiple company (provide file path with companies list)
   -uname UNAME          Username of the single user to scrape
+  -company COMPANY      Company of the single company to scrape
   -output {Email,SMS,Vishing script,Twitter DM,Twitter post,Twitter reply,Pretext}
                         Specify what to generate
   -payload {Login page,Attachment,Download Link,Else}
